@@ -7,16 +7,15 @@
     
     <title>Terms and Conditions | AU Pokies Auditor</title>
     <meta name="description" content="Read the Terms and Conditions of AU Pokies Auditor. Understand our website usage rules, affiliate disclosures, and limitations of liability.">
+    
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/android-chrome-512x512.png">
-
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="canonical" href="https://yourdomain.com.au/terms-conditions/">
+    
+    <link rel="canonical" href="https://en-au.payid-pokies13.workers.dev/terms-conditions/">
     
     <style>
         /* CSS Native Lighweight & Responsive - Matching Main Page */
@@ -32,10 +31,13 @@
         }
         body { font-family: system-ui, -apple-system, sans-serif; background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; margin: 0; padding: 0; }
         .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        
         header { background: var(--bg-card); border-bottom: 1px solid var(--border); padding: 20px 0; position: sticky; top: 0; z-index: 100; }
         .nav-flex { display: flex; justify-content: space-between; align-items: center; }
         .logo-text { font-size: 1.5rem; font-weight: 800; color: var(--accent); text-decoration: none; }
-        .nav-links a { color: var(--text-main); text-decoration: none; margin-left: 20px; font-weight: 500; }
+        
+        .nav-links { display: flex; align-items: center; }
+        .nav-links a { color: var(--text-main); text-decoration: none; margin-left: 20px; font-weight: 500; transition: color 0.3s; }
         .nav-links a:hover { color: var(--accent); }
         
         .legal-header { padding: 60px 0 30px 0; border-bottom: 1px solid var(--border); text-align: center; }
@@ -47,12 +49,50 @@
         h3 { font-size: 1.3rem; color: #fff; margin-top: 25px; }
         p, li { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 15px; }
         ul { margin-bottom: 20px; padding-left: 20px; }
-        a { color: var(--accent); text-decoration: none; }
+        a { color: var(--accent); text-decoration: none; font-weight: bold; }
         a:hover { text-decoration: underline; }
         
         footer { background: var(--bg-card); border-top: 1px solid var(--border); padding: 40px 0; margin-top: 60px; text-align: center; }
-        .footer-links a { color: var(--text-muted); margin: 0 15px; text-decoration: none; }
+        .footer-links a { color: var(--text-muted); margin: 0 15px; text-decoration: none; font-weight: normal; transition: color 0.3s; }
         .footer-links a:hover { color: var(--accent); }
+
+        /* ==========================================
+           RESPONSIVE DESIGN (MOBILE FIXES)
+           ========================================== */
+        @media (max-width: 768px) {
+            /* Perbaikan Header agar tidak tabrakan */
+            .nav-flex {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            .nav-links a {
+                margin: 0;
+                font-size: 0.95rem;
+            }
+
+            /* Penyesuaian Ukuran Font agar pas di layar kecil */
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            h3 { font-size: 1.2rem; }
+            .legal-header { padding: 40px 0 20px 0; }
+
+            /* Perbaikan Tautan Footer agar vertikal */
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .footer-links a {
+                margin: 0;
+                display: block;
+            }
+        }
     </style>
 </head>
 <body>
